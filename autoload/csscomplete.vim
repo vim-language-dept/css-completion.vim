@@ -348,9 +348,13 @@ function! csscomplete#CompleteCSS(findstart, base)
       let postfix = ""
     elseif prop == 'grid-auto-flow'
       let values = ["row", "column", "dense"]
+    elseif prop == 'grid-auto-rows'
+      let values = ["auto"]
+    elseif prop == 'grid-auto-columns'
+      let values = ["auto"]
     elseif prop =~ '^\%(height\|width\)$'
       let values = ["auto", "border-box", "content-box", "max-content", "min-content", "available", "fit-content"] + length_values
-    elseif prop =~ '^\%(left\|rigth\)$'
+    elseif prop =~ '^\%(left\|right\)$'
       let values = ["auto"]
     elseif prop == 'image-rendering'
       let values = ["auto", "crisp-edges", "pixelated"]
