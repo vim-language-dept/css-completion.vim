@@ -341,6 +341,8 @@ function! csscomplete#CompleteCSS(findstart, base)
     elseif prop == 'font'
       let values = ["normal", "italic", "oblique", "small-caps", "bold", "bolder", "lighter", "100", "200", "300", "400", "500", "600", "700", "800", "900", "xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large", "larger", "smaller", "sans-serif", "serif", "monospace", "system-ui", "emoji", "math", "fangsong", "cursive", "fantasy", "caption", "icon", "menu", "message-box", "small-caption", "status-bar"]
       let postfix = ""
+    elseif prop == 'grid-auto-flow'
+      let values = ["row", "column", "dense"]
     elseif prop =~ '^\%(height\|width\)$'
       let values = ["auto", "border-box", "content-box", "max-content", "min-content", "available", "fit-content"] + length_values
     elseif prop =~ '^\%(left\|rigth\)$'
