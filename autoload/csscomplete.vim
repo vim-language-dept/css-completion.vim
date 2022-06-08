@@ -146,11 +146,11 @@ function! csscomplete#CompleteCSS(findstart, base)
     elseif prop == 'additive-symbols'
       let values = []
     elseif prop == 'align-content'
-      let values = ["flex-start", "flex-end", "center", "space-between", "space-around", "stretch"]
+      let values = ["start", "end", "flex-start", "flex-end", "center", "space-between", "space-around", "stretch"]
     elseif prop == 'align-items'
-      let values = ["flex-start", "flex-end", "center", "baseline", "stretch"]
+      let values = ["start", "end", "normal", "stretch", "safe", "unsafe", "baseline", "first baseline", "last baseline", "flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]
     elseif prop == 'align-self'
-      let values = ["auto", "flex-start", "flex-end", "center", "baseline", "stretch"]
+      let values = ["start", "end", "auto", "flex-start", "flex-end", "center", "baseline", "stretch"]
     elseif prop == 'animation'
       let values = timing_functions + ["normal", "reverse", "alternate", "alternate-reverse"] + ["none", "forwards", "backwards", "both"] + ["running", "paused"]
       let postfix = ""
@@ -361,7 +361,7 @@ function! csscomplete#CompleteCSS(findstart, base)
     elseif prop == 'isolation'
       let values = ["auto", "isolate"]
     elseif prop == 'justify-content'
-      let values = ["flex-start", "flex-end", "center", "space-between", "space-around"]
+      let values = ["start", "end", "left", "right", "normal", "stretch", "safe", "unsafe", "baseline", "flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]
     elseif prop == 'letter-spacing'
       let values = ["normal"]
     elseif prop == 'line-break'
