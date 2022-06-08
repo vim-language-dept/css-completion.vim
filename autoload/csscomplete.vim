@@ -1,10 +1,10 @@
 " Vim completion script
 " Language: CSS
-"           Based on MDN CSS Reference at 2016 Jan <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference>
+"           Based on MDN CSS Reference <https://developer.mozilla.org/en-US/docs/Web/CSS/Reference>
 "           plus CSS Speech Module <http://www.w3.org/TR/css3-speech/>
 " Previous Contributor List:
 "           Kao, Wei-Ko(othree) ( othree AT gmail DOT com )
-" Maintainer: Kao, Wei-Ko(othree) ( othree AT gmail DOT com )
+" Maintainer: Jay Sitter <jay@jaysitter.com>
 " Original Author: Mikolaj Machowski ( mikmach AT wp DOT pl )
 " URL: https://github.com/vim-language-dept/css-completion.vim
 " Last Change: 2022 Jun 08
